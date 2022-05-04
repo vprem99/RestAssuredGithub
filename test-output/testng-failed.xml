@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.github.utils.TestReport"/>
+  </listeners>
+  <test thread-count="5" name="GetRepository(failed)">
+    <classes>
+      <class name="com.github.testCase.GetRepo">
+        <methods>
+          <include name="checkContentType"/>
+          <include name="GetAllRepository"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- com.github.testCase.GetRepo -->
+    </classes>
+  </test> <!-- GetRepository(failed) -->
+  <test thread-count="5" name="CreateRepository(failed)">
+    <classes>
+      <class name="com.github.testCase.AddRepository">
+        <methods>
+          <include name="checkResponseCode"/>
+          <include name="checkStatusLine"/>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- com.github.testCase.AddRepository -->
+    </classes>
+  </test> <!-- CreateRepository(failed) -->
+</suite> <!-- Failed suite [Suite] -->

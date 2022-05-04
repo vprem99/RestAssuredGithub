@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Suite</th></tr>
+<tr><td><a href="#t0">GetRepository</a></td><td class="num">4</td><td class="num">0</td><td class="num attn">1</td><td class="num">2,223</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">CreateRepository</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">2</td><td class="num">405</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">7</th><th class="num">0</th><th class="num attn">3</th><th class="num">2,628</th><th colspan="2"></th></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">GetRepository &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.github.testCase.GetRepo</td><td><a href="#m0">checkContentType</a></td><td rowspan="1">1651578856333</td><td rowspan="1">2</td></tr><tr><th colspan="4">GetRepository &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">com.github.testCase.GetRepo</td><td><a href="#m1">checkResponseBody</a></td><td rowspan="1">1651578856315</td><td rowspan="1">10</td></tr><tr class="passedeven"><td><a href="#m2">checkResponseCode</a></td><td rowspan="1">1651578856328</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m3">checkResponseTime</a></td><td rowspan="1">1651578856338</td><td rowspan="1">3</td></tr><tr class="passedeven"><td><a href="#m4">checkStatusLine</a></td><td rowspan="1">1651578856331</td><td rowspan="1">1</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">CreateRepository &#8212; failed</th></tr><tr class="failedeven"><td rowspan="2">com.github.testCase.AddRepository</td><td><a href="#m5">checkResponseCode</a></td><td rowspan="1">1651578856786</td><td rowspan="1">1</td></tr><tr class="failedeven"><td><a href="#m6">checkStatusLine</a></td><td rowspan="1">1651578856788</td><td rowspan="1">1</td></tr><tr><th colspan="4">CreateRepository &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">com.github.testCase.AddRepository</td><td><a href="#m7">checkContentType</a></td><td rowspan="1">1651578856790</td><td rowspan="1">1</td></tr><tr class="passedeven"><td><a href="#m8">checkResponseBody</a></td><td rowspan="1">1651578856782</td><td rowspan="1">3</td></tr><tr class="passedeven"><td><a href="#m9">checkResponseTime</a></td><td rowspan="1">1651578856792</td><td rowspan="1">1</td></tr></tbody>
+</table>
+<h2>GetRepository</h2><h3 id="m0">com.github.testCase.GetRepo#checkContentType</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Content type did not match
+	at com.github.utils.AssertionUtils.assertForString(AssertionUtils.java:15)
+	at com.github.testCase.GetRepo.checkContentType(GetRepo.java:49)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.github.testCase.GetRepo#checkResponseBody</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.github.testCase.GetRepo#checkResponseCode</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.github.testCase.GetRepo#checkResponseTime</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.github.testCase.GetRepo#checkStatusLine</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>CreateRepository</h2><h3 id="m5">com.github.testCase.AddRepository#checkResponseCode</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Response code is not 201. it is 422
+	at com.github.utils.AssertionUtils.assertForTrue(AssertionUtils.java:34)
+	at com.github.testCase.AddRepository.checkResponseCode(AddRepository.java:42)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">com.github.testCase.AddRepository#checkStatusLine</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Status line did not match &amp; it is HTTP/1.1 422 Unprocessable Entity
+	at com.github.utils.AssertionUtils.assertForString(AssertionUtils.java:15)
+	at com.github.testCase.AddRepository.checkStatusLine(AddRepository.java:50)
+... Removed 26 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">com.github.testCase.AddRepository#checkContentType</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">com.github.testCase.AddRepository#checkResponseBody</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">com.github.testCase.AddRepository#checkResponseTime</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
